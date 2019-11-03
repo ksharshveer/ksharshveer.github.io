@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harsh's Profile</title>
+
+    <!-- Spectre CSS framework https://picturepan2.github.io/spectre/index.html -->
+    <link rel="stylesheet" href="css/spectre.min.css">
+
+    <!-- Adding/Overriding custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="menu-icon" class="show-sm"><img src="images/bars-solid.svg" width="32" height="32"></div>
+    <div id="mobile-menu">
+        <a href="#about-me" class="btn btn-link">About Me</a>
+        <a href="#projects" class="btn btn-link">Projects</a>
+        <a href="#contact" class="btn btn-link">Contact</a>
+        <div id="menu-close-icon"><img src="images/times-circle-regular.svg" width="40" height="40"></div>
+    </div>
+
+    <nav class="container">
+        <div class="columns hide-sm">
+            <a href="#" class="btn btn-lg btn-link text-bold column col-3">Harshveer Singh</a>
+
+            <div class="column col-6 col-ml-auto">
+                <div class="columns">
+                    <a href="#about-me" class="btn btn-link column">About Me</a>
+                    <a href="#projects" class="btn btn-link column">Projects</a>
+                    <a href="#contact" class="btn btn-link column">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about-me">
+        <div class="h3 bg-secondary">About Me</div>
+        <div class="container">
+            <div class="columns">
+                <div class="column col-3 col-md-4 col-mx-auto">
+                    <div class="popover popover-right">
+                        <img id="my-img" alt="Myself" src="images/me.jpg" width="480" class="img-responsive">
+                        <div class="h5 popover-container"><a
+                                href="https://www.google.com/maps?q=bridal+falls&ie=UTF-8">Bridal Falls, BC</a></div>
+                    </div>
+                </div>
+                <div class="column col-9 col-md-12">
+                    <div class="sh card">
+                        <div class="card-header">
+                            <img alt="lvs-img" width="40" height="40" src="images/id-card-solid.svg"
+                                class="img-responsive">
+                            <div class="card-title h4">Harshveer Singh</div>
+                            <div class="card-subtitle text-gray">Student from Abbotsford</div>
+                        </div>
+                        <div class="card-body">
+                            <p>Aspiring to become a professional software developer. I look forward to forever keep
+                                learning and growing in this never ending field of technology.
+                            </p>
+                            <div class="container">
+                                <div class="columns">
+                                    <div class="column col-md-6 col-sm-8">
+                                        <div class="icon-text"><a href="https://ca.linkedin.com/in/ksharshveer"><img
+                                                    src="images/linkedin-brands.svg" width="24px height="
+                                                    24"">LinkedIn</a></div>
+
+                                    </div>
+                                    <div class="column col-md-6 col-sm-8">
+                                        <div class="icon-text"><a href="https://github.com/ksharshveer"><img
+                                                    src="images/github-square-brands.svg" width="24px height="
+                                                    24"">GitHub</a></div>
+
+                                    </div>
+
+                                    <div class="column col-md-6 col-sm-8">
+                                        <div class="icon-text"><a href="https://www.hackerrank.com/DevilLordHarsh"><img
+                                                    src="images/hackerrank-brands.svg" width="24px height="
+                                                    24"">HackerRank</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-md-12">
+                    <div class="sh card">
+                        <div class="card-header">
+                            <img alt="lvs-img" width="40" height="40" src="images/graduation-cap-solid.svg"
+                                class="img-responsive">
+                            <div class="card-title h4">Bachelor of Science</div>
+                            <div class="card-subtitle text-gray">University of the Fraser Valley, British Columbia</div>
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <tr>
+                                    <td>Major</td>
+                                    <td>Computing Science</td>
+                                </tr>
+                                <tr>
+                                    <td>Concentration</td>
+                                    <td>Programming Languages and Software</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <div class="h3 bg-secondary">Projects</div>
+
+        <div class="container">
+
+            <div class="columns">
+
+                <div class="column col-md-12 col-xl-6">
+                    <div class="sh card">
+                        <div class="card-header">
+                            <div class="card-title h4">Local Video Streamer</div>
+                            <div class="card-subtitle text-gray">Python</div>
+                        </div>
+                        <div class="card-image">
+                            <img alt="lvs-img" src="images/lvs.PNG" class="img-responsive">
+                        </div>
+                        <div class="card-body">
+                            <div class="h5">Highlights -</div>
+                            <ul>
+                                <li>Stream video from camera/video file from one device to other(s) on local network.
+                                </li>
+                                <li>Save video stream, detect faces, or stream using browser(s)</li>
+                            </ul>
+                            <div class="h5">Built using -</div>
+                            <ul>
+                                <li>'opencv' to read, write, and manipulate stream.</li>
+                                <li>'toml' to store application settings.</li>
+                                <li>'click' to provide command line interface.</li>
+                                <li>'async' to improve video server's performance.</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://ksharshveer.github.io/lvs">
+                                <button class="btn btn-primary btn-long">View</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column col-md-12 col-xl-6">
+                    <div class="sh card">
+                        <div class="card-header">
+                            <div class="card-title h4">get-spotlights</div>
+                            <div class="card-subtitle text-gray">Python</div>
+                        </div>
+                        <div class="card-image">
+                            <img alt="get-spotlights-gui-img" src="images/get-spotlights-gui.PNG"
+                                class="img-responsive">
+                        </div>
+                        <div class="card-body">
+                            <div class="h5">Highlights -</div>
+                            <ul>
+                                <li>Get full-hd Windows10 spotlight images with a single click.</li>
+                                <li>Number of customization options available.</li>
+                            </ul>
+                            <div class="h5">Built using -</div>
+                            <ul>
+                                <li>'tkinter' for graphical user interface.</li>
+                                <li>'arg-parse' for command line interface.</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://ksharshveer.github.io/get-spotlights">
+                                <button class="btn btn-primary btn-long">View</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-md-12 col-xl-6">
+                    <div class="sh card">
+                        <div class="card-header">
+                            <div class="card-title h4">Airline Ticket Booking System</div>
+                            <div class="card-subtitle text-gray">Java</div>
+                        </div>
+                        <div class="card-image">
+                            <img alt="370-img" src="images/370demohome.png" class="img-responsive">
+                        </div>
+                        <div class="card-body">
+                            <div class="h5">Highlights -</div>
+                            <ul>
+                                <li>Book airplane ticket easily online.</li>
+                                <li>Only stores password hash instead of password.</li>
+                            </ul>
+                            <div class="h5">Built using -</div>
+                            <ul>
+                                <li>'Spark Java' micro web framework.</li>
+                                <li>'SQLite' for storage.</li>
+                                <li>Agile development in a team of 3. SRS heavily developed by 'Jackie'. This website
+                                    demo developed by me. Desktop demo developed by 'Thomas' using JavaFX.</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/ksharshveer/demo370">
+                                <button class="btn btn-primary btn-long">View</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="h3 bg-secondary">Contact</div>
+        <div class="container">
+            <div class="columns">
+                <div class="column col-md-6 col-sm-8">
+                    <div class="icon-text"><a href="mailto:ksharshveer@gmail.com"><img
+                                src="images/envelope-square-solid.svg" width="24" height="24">ksharshveer@gmail.com</a>
+                    </div>
+                </div>
+                <div class="column col-md-6 col-sm-8">
+                    <div class="icon-text"><a href="https://ca.linkedin.com/in/ksharshveer"><img
+                                src="images/linkedin-brands.svg" width="24px height=" 24"">LinkedIn</a></div>
+
+                </div>
+                <div class="column col-md-6 col-sm-8">
+                    <div class="icon-text"><a href="https://github.com/ksharshveer"><img
+                                src="images/github-square-brands.svg" width="24px height=" 24"">GitHub</a></div>
+
+                </div>
+                <div class="column col-md-6 col-sm-8">
+                    <div class="icon-text"><a href="https://www.hackerrank.com/DevilLordHarsh"><img
+                                src="images/hackerrank-brands.svg" width="24px height=" 24"">HackerRank</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div>
+            <div class="h6"><span>&copy;</span>
+                <script>document.write(new Date().getFullYear())</script> Harshveer Singh</div>
+            <div class="h6">Icons by <a href="https://fontawesome.com/license">Font Awesome</a> licensed under <a
+                    href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
