@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Harsh's Profile</title>
+    <link rel="icon" type="img/png" href="images/brand.ico">
 
     <!-- Spectre CSS framework https://picturepan2.github.io/spectre/index.html -->
     <link rel="stylesheet" href="css/spectre.min.css">
@@ -16,8 +17,10 @@
 </head>
 
 <body>
-    <div id="menu-icon" class="show-sm"><img src="images/bars-solid.svg" width="32" height="32"></div>
-    <div id="mobile-menu">
+
+    <!-- Navbar section starts here -->
+    <div id="menu-icon" class="show-sm"><img src="images/bars-solid.svg" width="32" height="32" class="sh"></div>
+    <div id="mobile-menu" class="sh">
         <a href="#about-me" class="btn btn-link">About Me</a>
         <a href="#projects" class="btn btn-link">Projects</a>
         <a href="#contact" class="btn btn-link">Contact</a>
@@ -26,7 +29,7 @@
 
     <nav class="container">
         <div class="columns hide-sm">
-            <a href="#" class="btn btn-lg btn-link text-bold column col-3">Harshveer Singh</a>
+            <a href="#" class="btn btn-lg btn-link text-bold column col-2">Harshveer Singh</a>
 
             <div class="column col-6 col-ml-auto">
                 <div class="columns">
@@ -38,15 +41,16 @@
         </div>
     </nav>
 
+    <!-- About me section starts here -->
     <section id="about-me">
-        <div class="h3 bg-secondary">About Me</div>
+        <div class="h3 sh">About Me</div>
         <div class="container">
             <div class="columns">
                 <div class="column col-3 col-md-4 col-mx-auto">
                     <div class="popover popover-right">
-                        <img id="my-img" alt="Myself" src="images/me.jpg" width="480" class="img-responsive">
+                        <img id="my-img" alt="Myself" src="images/me.jpg" width="480" class="img-responsive sh">
                         <div class="h5 popover-container"><a
-                                href="https://www.google.com/maps?q=bridal+falls&ie=UTF-8">Bridal Falls, BC</a></div>
+                                href="https://www.google.com/maps?q=bridal+falls&ie=UTF-8" style="color:white;padding:10px;border-radius:0 10px 10px 0;">Bridal Falls, BC</a></div>
                     </div>
                 </div>
                 <div class="column col-9 col-md-12">
@@ -93,7 +97,7 @@
                             <img alt="lvs-img" width="40" height="40" src="images/graduation-cap-solid.svg"
                                 class="img-responsive">
                             <div class="card-title h4">Bachelor of Science</div>
-                            <div class="card-subtitle text-gray">University of the Fraser Valley, British Columbia</div>
+                            <div><a href="https://www.ufv.ca" class="card-subtitle text-gray">University of the Fraser Valley, British Columbia</a></div>
                         </div>
                         <div class="card-body">
                             <table>
@@ -115,8 +119,9 @@
 
     </section>
 
+    <!-- Projects section starts here -->
     <section id="projects">
-        <div class="h3 bg-secondary">Projects</div>
+        <div class="h3 sh">Projects</div>
 
         <div class="container">
 
@@ -195,7 +200,7 @@
                         <div class="card-body">
                             <div class="h5">Highlights -</div>
                             <ul>
-                                <li>Book airplane ticket easily online.</li>
+                                <li>Register, login, and buy airplane tickets easily online.</li>
                                 <li>Only stores password hash instead of password.</li>
                             </ul>
                             <div class="h5">Built using -</div>
@@ -219,8 +224,9 @@
 
     </section>
 
+    <!-- Contact section starts here -->
     <section id="contact">
-        <div class="h3 bg-secondary">Contact</div>
+        <div class="h3 sh">Contact</div>
         <div class="container">
             <div class="columns">
                 <div class="column col-md-6 col-sm-8">
@@ -246,6 +252,7 @@
             </div>
     </section>
 
+    <!-- Footer starts here -->
     <footer>
         <div>
             <div class="h6"><span>&copy;</span>
@@ -255,6 +262,7 @@
         </div>
     </footer>
 
+    <!-- Javascript source files -->
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
 

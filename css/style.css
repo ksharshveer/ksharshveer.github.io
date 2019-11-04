@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin-left: 2%;
     margin-right: 2%;
@@ -27,10 +30,6 @@ footer div div {
     text-align: center;
 }
 
-td {
-    border-bottom: 1px solid purple;
-}
-
 .card {
     margin: 2vw;
     padding: 2vw;
@@ -38,18 +37,15 @@ td {
 }
 
 .icon-text {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px;
     padding: 10px;
 }
 
-.icon-text:hover, div.h3.bg-secondary {
+.icon-text:hover, div.card-body table tr td, a.btn.btn-link:hover {
     border-bottom: 1px solid #3634d2;
 }
 
-.icon-text a {
+.icon-text a, div.h5 a, div a.text-gray {
     text-decoration: none;
     height: 100%;
     margin-bottom: 50px;
@@ -63,13 +59,19 @@ td {
     min-width: 100px;
 }
 
-.sh {
-    box-shadow: 8px 8px 8px grey;
+.sh, button:hover {
+    box-shadow: 6px 6px 8px grey;
 }
 
-div.h3.bg-secondary {
+div.h3 {
+    position: sticky;
+    top: 44px;
+    z-index: 1;
+    margin-bottom: 35px;
+    color: white;
+    background:#4240d4;
+    border-color:#3634d2;
     text-align: center;
-    box-shadow: 3px 5px 10px slateblue;
     border-radius: 5px;
 }
 
@@ -82,6 +84,7 @@ div.h3.bg-secondary {
     z-index: 2;
     padding: 10px;
     position: fixed;
+    top: 5px;
 }
 
 #menu-icon img, #menu-close-icon img {
@@ -91,31 +94,31 @@ div.h3.bg-secondary {
     border-radius: 5px;
 }
 
-#menu-icon img:hover, #menu-close-icon img:hover {
+#menu-icon img:hover, #menu-close-icon img:hover, #menu-icon a:hover, #mobile-menu a:hover, div.h5 a {
     background:#4240d4;
     border-color:#3634d2;
+    box-shadow: 6px 6px 8px grey;
 }
 
 #mobile-menu {
-    opacity: 0.9;
     display: none;
-    background: #5755d9;
-    border-radius: 5px 120px 5px 120px;
+    animation-name: fall;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    opacity: 0.9;
+    background: white;
+    border-radius: 5px 5px 120px 120px;
     position: sticky;
-    top: 10%;
     z-index: 2;
-    padding: 5%;
+    padding: 4%;
 }
 
 #mobile-menu a {
     opacity: 1;
+    background: #5755d9;
     margin: 20px;
     display: block;
     color: white;
-}
-
-#mobile-menu a:hover {
-    background: #4240d4;
 }
 
 #my-img {
@@ -125,6 +128,13 @@ div.h3.bg-secondary {
     padding: 4%;
 }
 
-.h3.bg-secondary {
-    margin-bottom: 40px;
+@media only screen and (max-width: 600px) {
+    div.h3 {
+      top: 10px;
+    }
+}
+
+@keyframes fall {
+    from {top: -50%;}
+    to {top: 0;}
 }
